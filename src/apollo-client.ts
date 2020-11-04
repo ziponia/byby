@@ -13,8 +13,9 @@ const createApolloClient = () => {
   let uri = isProduction
     ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
     : "http://localhost:3000";
+
   const httpLink = new HttpLink({
-    uri: `${uri}/api/graphql`,
+    uri: typeof window === "undefined" ? `${uri}/api/graphql` : "/api/graphql",
   });
 
   return new ApolloClient({
