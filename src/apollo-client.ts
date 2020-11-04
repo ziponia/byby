@@ -9,11 +9,9 @@ import { useMemo } from "react";
 let apolloClient: ApolloClient<NormalizedCacheObject>;
 let isProduction = process.env.NODE_ENV === "production";
 
-console.log("Set process.env.VERCEL_URL", process.env.VERCEL_URL);
-
 const createApolloClient = () => {
   let uri = isProduction
-    ? `https://${process.env.VERCEL_URL}`
+    ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
     : "http://localhost:3000";
   const httpLink = new HttpLink({
     uri: `${uri}/api/graphql`,
