@@ -10,7 +10,7 @@ let apolloClient: ApolloClient<NormalizedCacheObject>;
 
 const createApolloClient = () => {
   const httpLink = new HttpLink({
-    uri: "/graphql",
+    uri: "http://localhost:3000/graphql",
   });
 
   return new ApolloClient({

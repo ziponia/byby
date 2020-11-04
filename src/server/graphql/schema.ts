@@ -5,6 +5,7 @@ import { gql } from "apollo-server";
 const typeDef = gql`
   type Query {
     _version: String!
+    _appName: String!
   }
 
   type Mutation {
@@ -15,6 +16,7 @@ const typeDef = gql`
 const resolver = {
   Query: {
     _version: () => "1.0",
+    _appName: () => "Apollo Example APP",
   },
   Mutation: {
     _empty: () => "_empty",

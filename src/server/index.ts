@@ -1,6 +1,7 @@
 import next from "next";
 import express from "express";
 import { ApolloServer } from "apollo-server-express";
+import logger from "morgan";
 import schema from "./graphql/schema";
 
 const PORT = process.env.PORT || 3000;
@@ -16,6 +17,8 @@ const main = async () => {
   await app.prepare();
 
   const web = express();
+  web.use(logger("tiny"));
+
   server.applyMiddleware({ app: web });
 
   web.get("*", (req, res) => {
