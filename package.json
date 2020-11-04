@@ -2,15 +2,16 @@
   "name": "with-typescript",
   "version": "1.0.0",
   "scripts": {
-    "dev": "nodemon",
-    "build": "next build && tsc --project tsconfig.server.json",
-    "start": "cross-env NODE_ENV=production node dist/server/index.js",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
     "type-check": "tsc"
   },
   "dependencies": {
     "@apollo/client": "^3.2.5",
     "apollo-server": "^2.19.0",
     "apollo-server-express": "^2.19.0",
+    "apollo-server-micro": "^2.19.0",
     "cross-env": "^7.0.2",
     "express": "^4.17.1",
     "graphql": "^15.4.0",
