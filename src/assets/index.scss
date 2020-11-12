@@ -1,0 +1,22 @@
+@import "./var.scss";
+@import "./font.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "NanumBarunGothic", sans-serif;
+}
+
+html,
+body,
+#__next {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+
+  a {
+    color: $color-dark;
+    text-decoration: none;
+  }
+}
