@@ -22,7 +22,7 @@ const Nexti18nInstance = new i18n({
   serverLanguageDetection: true,
   defaultLanguage: "ko",
   defaultNS: "common",
-  localePath: path.join("./public/static/locales"),
+  localePath: path.resolve("./public/static/locales"),
   fallbackNS: "en",
   otherLanguages: ["ko"],
   localeExtension: "json",
