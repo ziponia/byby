@@ -1,11 +1,7 @@
-export * from "./atoms/Button"
-export * from "./atoms/Input"
-export * from "./atoms/SelectBox"
-export * from "./atoms/Text"
-
-export * from "./molecules/Logo"
-export * from "./molecules/SearchInput"
-
-export * from "./organisms/Header"
-export * from "./organisms/TopNav"
-export * from "./organisms/Gnb"
+export * from "./common/Logo"
+export * from "./common/SearchInput"
+export * from "./common/Header"
+export * from "./common/Text"
+export * from "./common/Gnb"
+export * from "./common/Layout"
+export * from "./common/ImageSlider"

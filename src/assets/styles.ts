@@ -1,5 +1,7 @@
 import { DefaultTheme } from "styled-components"
 export default {
   colors: {},
-  padding: {},
+  size: {
+    box: 1200,
+  },
 } as DefaultTheme
