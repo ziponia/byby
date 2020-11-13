@@ -1,14 +1,20 @@
 import React from "react"
 import { KubyNextPageProps } from "../interface/core"
-import { PageTemplate, ImageSlider, Header, Gnb } from "@/components/ui"
+import {
+  PageTemplate,
+  ImageSlider,
+  Header,
+  Gnb,
+  Container,
+  Footer,
+} from "@/components/ui"
+import { ProductItem } from "@/components/product/ProductItem"
 
 export type Props = {}
 
 const IndexPage: KubyNextPageProps<Props> = (props) => {
   return (
     <PageTemplate>
-      <Header />
-      <Gnb />
       <ImageSlider
         imageUrls={[
           "https://via.placeholder.com/1920x420.png?text=Main%20Banner-1",
@@ -16,6 +22,8 @@ const IndexPage: KubyNextPageProps<Props> = (props) => {
           "https://via.placeholder.com/1920x420.png?text=Main%20Banner-3",
         ]}
       />
+
+      <Container></Container>
     </PageTemplate>
   )
 }

@@ -18,7 +18,7 @@ export const ImageSliderItem: React.FC<ImageSliderItemProps> = ({
 }) => {
   return (
     <ImageSliderItemStyle>
-      <Image src={src} quality={100} loading="lazy" layout="fill" />
+      <Image src={src} loading="lazy" layout="fill" />
     </ImageSliderItemStyle>
   )
 }
