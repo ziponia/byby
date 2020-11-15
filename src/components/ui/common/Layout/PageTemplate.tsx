@@ -4,7 +4,9 @@ import { Footer } from "../Footer"
 import { Gnb } from "../Gnb"
 import { Header } from "../Header"
 
-export const MainStyle = styled.main``
+export const MainStyle = styled.main`
+  padding-bottom: 100px;
+`
 
 export type PageTemplateProps = {}
 

@@ -37,6 +37,7 @@ export const FooterInfo = styled.div`
   display: flex;
   align-items: flex-start;
   font-weight: 500;
+  padding: 20px 0 40px 0;
 
   .cs_number {
     font-size: 2rem;

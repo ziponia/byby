@@ -1,14 +1,7 @@
 import React from "react"
 import { KubyNextPageProps } from "../interface/core"
-import {
-  PageTemplate,
-  ImageSlider,
-  Header,
-  Gnb,
-  Container,
-  Footer,
-} from "@/components/ui"
-import { ProductItem } from "@/components/product/ProductItem"
+import { PageTemplate, ImageSlider, Container } from "@/components/ui"
+import { ProductItem, ProductList } from "@/components/ui"
 
 export type Props = {}
 
@@ -22,8 +15,35 @@ const IndexPage: KubyNextPageProps<Props> = (props) => {
           "https://via.placeholder.com/1920x420.png?text=Main%20Banner-3",
         ]}
       />
-
-      <Container></Container>
+      <div style={{ marginTop: 40, marginBottom: 40 }} />
+      <Container>
+        <ProductList>
+          <ProductItem />
+          <ProductItem />
+          <ProductItem />
+          <ProductItem />
+          <ProductItem />
+          <ProductItem />
+          <ProductItem />
+          <ProductItem />
+          <ProductItem />
+          <ProductItem />
+          <ProductItem />
+          <ProductItem />
+          <ProductItem />
+          <ProductItem />
+          <ProductItem />
+          <ProductItem />
+          <ProductItem />
+          <ProductItem />
+          <ProductItem />
+          <ProductItem />
+          <ProductItem />
+          <ProductItem />
+          <ProductItem />
+          <ProductItem />
+        </ProductList>
+      </Container>
     </PageTemplate>
   )
 }
